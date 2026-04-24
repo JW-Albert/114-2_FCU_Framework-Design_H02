@@ -35,3 +35,13 @@ java -cp out fcu.remote.App
 - 由上方下拉選單切換裝置（TV / AirConditioner）
 - 按 `ON / OFF / UP / DOWN` 操作
 - 中央狀態列會即時顯示目前裝置狀態
+
+## 交付文件（Markdown 轉 PDF）
+作業報告 Markdown：`docs/Report.md`
+
+- **截圖放置**：`docs/screenshots/`
+- **轉 PDF（Pandoc）**：
+
+```powershell
+pandoc .\docs\Report.md -o .\docs\Report.pdf
+```
