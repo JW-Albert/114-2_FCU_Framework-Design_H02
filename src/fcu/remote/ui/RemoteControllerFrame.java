@@ -95,6 +95,7 @@ public class RemoteControllerFrame extends JFrame {
         add(buttonsPanel, BorderLayout.SOUTH);
 
         setMinimumSize(new Dimension(420, 220));
+        pack();
         setLocationRelativeTo(null);
     }
 

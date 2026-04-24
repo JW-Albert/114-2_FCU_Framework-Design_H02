@@ -52,13 +52,15 @@ java -cp out fcu.remote.App
 - 按 `UP / DOWN`：調整頻道或溫度（若裝置為 OFF，則不變動）
 - 中央文字會即時顯示目前狀態
 
-### 執行畫面（請自行截圖放入）
-請將執行畫面截圖放入 `docs/screenshots/`，並在下方填入對應檔名與說明。
+### 執行畫面
 
-1. `docs/screenshots/ui-tv.png`
-   - 說明：切換到 TV，顯示預設 CH=7，並示範 UP/DOWN 於 1~15 邊界行為
-2. `docs/screenshots/ui-ac.png`
-   - 說明：切換到 AirConditioner，顯示預設 25°C，並示範 UP/DOWN 於 20~30 邊界行為
+**TV 模式**（Device: TV，開機後按兩下 UP，CH 從預設 7 變為 9；UP/DOWN 在 1~15 邊界維持不變）
+
+![TV 模式執行畫面](screenshots/ui-tv.png)
+
+**AirConditioner 模式**（Device: AirConditioner，開機後按兩下 DOWN，TEMP 從預設 25°C 變為 23°C；UP/DOWN 在 20~30 邊界維持不變）
+
+![AirConditioner 模式執行畫面](screenshots/ui-ac.png)
 
 ## 參考資料
 - Oracle Java Swing 文件（Swing 基本元件與事件處理）
