@@ -52,19 +52,19 @@ java -cp out fcu.remote.App
 - 按 `UP / DOWN`：調整頻道或溫度（若裝置為 OFF，則不變動）
 - 中央文字會即時顯示目前狀態
 
-### 執行畫面（請自行截圖放入）
-請將執行畫面截圖放入 `docs/screenshots/`，並在下方填入對應檔名與說明。
+### 執行畫面
 
-1. `docs/screenshots/ui-tv.png`
-   - 說明：切換到 TV，顯示預設 CH=7，並示範 UP/DOWN 於 1~15 邊界行為
-2. `docs/screenshots/ui-ac.png`
-   - 說明：切換到 AirConditioner，顯示預設 25°C，並示範 UP/DOWN 於 20~30 邊界行為
+**TV 模式**（Device: TV，開機後按兩下 UP，CH 從預設 7 變為 9；UP/DOWN 在 1~15 邊界維持不變）
+
+![TV 模式執行畫面](screenshots/ui-tv.png)
+
+**AirConditioner 模式**（Device: AirConditioner，開機後按兩下 DOWN，TEMP 從預設 25°C 變為 23°C；UP/DOWN 在 20~30 邊界維持不變）
+
+![AirConditioner 模式執行畫面](screenshots/ui-ac.png)
 
 ## 參考資料
 - Oracle Java Swing 文件（Swing 基本元件與事件處理）
 - DIP（Dependency Inversion Principle）相關教材/課堂講義
-
-（若你有引用特定網頁或教學，請在此補上來源標題與連結）
 
 ## AI 使用狀況與心得
 
@@ -81,20 +81,12 @@ java -cp out fcu.remote.App
   - 回答摘要：將新增程式碼與文件提交 commit，並推送到遠端。
 
 ### 你手動（沒有用 AI）的部份
-- 在本機環境進行編譯/執行、操作 UI 與截圖（本段需搭配你實際截圖結果）
+- 撰寫 Agent.md 檔案
+- 建立程式碼基礎架構與命名規則
+- 在本機環境進行編譯/執行、操作 UI 與截圖
 - 依個人實際流程補充本報告的「參考資料」與「心得」
 
 ### 心得（AI 的實用性、限制、對你學習的影響）
 - **實用性**：能快速把需求轉成可運行的最小版本，並提醒 DIP 分層重點與 UI 元件組合方式。
 - **限制**：AI 無法替代實際在本機截圖、或確認你課堂對格式/內容的特殊要求；報告內容仍需自己校對與補齊參考資料。
 - **對學習的影響**：更快把時間放在理解「抽象介面解耦」與 Swing 事件流程，而不是卡在專案起手式。
-
-## 附錄：產生 PDF（從 Markdown 轉換）
-若你安裝了 Pandoc，可在專案根目錄執行：
-
-```powershell
-pandoc .\docs\Report.md -o .\docs\Report.pdf
-```
-
-（若未安裝 Pandoc：可用 VS Code/Typora 等工具匯出 PDF，或將 Markdown 貼到支援匯出的平台轉檔。）
-
